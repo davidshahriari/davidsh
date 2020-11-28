@@ -5,9 +5,10 @@
   "dependencies": {
     "@emotion/cache": "latest",
     "@emotion/react": "latest",
-    "@emotion/styled": "latest",
     "@emotion/server": "latest",
+    "@emotion/styled": "latest",
     "@material-ui/core": "next",
+    "@material-ui/icons": "^4.9.1",
     "clsx": "latest",
     "next": "latest",
     "prop-types": "latest",

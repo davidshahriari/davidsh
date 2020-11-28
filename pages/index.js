@@ -1,24 +1,44 @@
 import React from 'react';
-import Container from '@material-ui/core/Container';
-import Typography from '@material-ui/core/Typography';
-import Box from '@material-ui/core/Box';
-import ProTip from '../src/ProTip';
-import Link from '../src/Link';
-import Copyright from '../src/Copyright';
+import { makeStyles } from '@material-ui/core/styles';
+import Divider from '@material-ui/core/Divider';
+import Fab from '@material-ui/core/Fab';
+import Zoom from '@material-ui/core/Zoom';
+import KeyboardArrowUpIcon from '@material-ui/icons/KeyboardArrowUp';
+import ElevateAppBar from 'src/components/ElevateAppBar';
+import Header from 'src/components/Header';
+import ScrollTop from 'src/components/ScrollTop';
+import Copyright from 'src/components/Copyright';
 
-export default function Index() {
+const useStyles = makeStyles((theme) => ({
+  root: {
+    height: '100%',
+  },
+  content: {
+    width: '100%',
+    height: '100%',
+  },
+}));
+
+export default function Index(props) {
+  const classes = useStyles();
+
   return (
-    <Container maxWidth="sm">
-      <Box my={4}>
-        <Typography variant="h4" component="h1" gutterBottom>
-          Next.js v5-alpha example
-        </Typography>
-        <Link href="/about" color="secondary">
-          Go to the about page
-        </Link>
-        <ProTip />
+    <React.Fragment>
+      <div className={classes.root}>
+        <ElevateAppBar />
+        <main>
+          <div className={classes.content}>
+            <Divider />
+            <Header />
+          </div>
+        </main>
         <Copyright />
-      </Box>
-    </Container>
+      </div>
+      <ScrollTop {...props}>
+        <Fab color="secondary" size="small" aria-label="scroll back to top">
+          <KeyboardArrowUpIcon />
+        </Fab>
+      </ScrollTop>
+    </React.Fragment>
   );
 }
