@@ -9,6 +9,7 @@ import useScrollTrigger from '@material-ui/core/useScrollTrigger';
 const useStyles = makeStyles((theme) => ({
   brand: {
     fontFamily: 'monospace',
+    fontWeight: 'bold',
   },
 }));
 
@@ -43,7 +44,7 @@ export default function ElevateAppBar(props) {
   return (
     <React.Fragment>
       <ElevationScroll {...props}>
-        <AppBar color="default">
+        <AppBar color="primary">
           <Toolbar>
             <Typography variant="h6" className={classes.brand}>
               david.sh

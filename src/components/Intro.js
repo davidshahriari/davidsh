@@ -15,10 +15,9 @@ const useStyles = makeStyles((theme) => ({
     alignItems: 'center',
     flexDirection: 'column',
     justifyContent: 'center',
-    backgroundSize: 'cover',
-    backgroundPosition: 'center',
-    backgroundRepeat: 'no-repeat',
-    backgroundImage: 'url(/images/shapes/banner-bg.svg)',
+    background: 'transparent',
+    backgroundImage:
+      'linear-gradient(180deg, rgb(247, 249, 250) 100%, #fff 0%)',
   },
   section: {
     width: '100%',
