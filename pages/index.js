@@ -2,10 +2,10 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Divider from '@material-ui/core/Divider';
 import Fab from '@material-ui/core/Fab';
-import Zoom from '@material-ui/core/Zoom';
 import KeyboardArrowUpIcon from '@material-ui/icons/KeyboardArrowUp';
 import ElevateAppBar from 'src/components/ElevateAppBar';
 import Header from 'src/components/Header';
+import Intro from 'src/components/Intro';
 import ScrollTop from 'src/components/ScrollTop';
 import Copyright from 'src/components/Copyright';
 
@@ -30,9 +30,10 @@ export default function Index(props) {
           <div className={classes.content}>
             <Divider />
             <Header />
+            <Intro />
           </div>
         </main>
-        <Copyright />
+        {/* <Copyright /> */}
       </div>
       <ScrollTop {...props}>
         <Fab color="secondary" size="small" aria-label="scroll back to top">
