@@ -6,6 +6,8 @@ import { CacheProvider } from '@emotion/react';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import createCache from '@emotion/cache';
 import theme from 'src/utils/theme';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export const cache = createCache({ key: 'css' });
 
@@ -18,12 +20,18 @@ export default function MyApp(props) {
     if (jssStyles) {
       jssStyles.parentElement.removeChild(jssStyles);
     }
+    // Init AOS
+    AOS.init({
+      easing: 'ease-out-cubic',
+      once: true,
+      offset: 50,
+    });
   }, []);
 
   return (
     <CacheProvider value={cache}>
       <Head>
-        <title>My page</title>
+        <title>David Shahriari</title>
         <meta name="viewport" content="initial-scale=1, width=device-width" />
       </Head>
       <ThemeProvider theme={theme}>

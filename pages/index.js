@@ -36,7 +36,7 @@ export default function Index(props) {
         {/* <Copyright /> */}
       </div>
       <ScrollTop {...props}>
-        <Fab color="secondary" size="small" aria-label="scroll back to top">
+        <Fab color="secondary" size="small">
           <KeyboardArrowUpIcon />
         </Fab>
       </ScrollTop>

@@ -65,7 +65,7 @@ export default function Header() {
             </Grid>
             <Grid item xs={12}>
               <Typography variant="h6" color="textSecondary" align="center">
-                Software Engineer
+                Full Stack Web Developer
               </Typography>
             </Grid>
           </Grid>
