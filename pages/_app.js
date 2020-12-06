@@ -31,8 +31,14 @@ export default function MyApp(props) {
   return (
     <CacheProvider value={cache}>
       <Head>
+        <meta charSet="utf-8" />
         <title>David Shahriari</title>
         <meta name="viewport" content="initial-scale=1, width=device-width" />
+        <meta
+          name="description"
+          content="This is the personal web site of David Shahriari."
+        />
+        <meta name="author" content="Oddwic Corporation" />
       </Head>
       <ThemeProvider theme={theme}>
         {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
