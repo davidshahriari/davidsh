@@ -144,7 +144,12 @@ export default function ElevateAppBar(props) {
               <IconButton color="inherit">
                 <LinkedInIcon />
               </IconButton>
-              <IconButton color="inherit">
+              <IconButton
+                color="inherit"
+                target="_blank"
+                rel="noreferrer"
+                href="https://github.com/davidshahriari"
+              >
                 <GitHubIcon />
               </IconButton>
             </div>

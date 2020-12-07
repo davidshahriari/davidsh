@@ -6,8 +6,8 @@ import KeyboardArrowUpIcon from '@material-ui/icons/KeyboardArrowUp';
 import ElevateAppBar from 'src/components/ElevateAppBar';
 import Header from 'src/components/Header';
 import Intro from 'src/components/Intro';
+import Contact from 'src/components/Contact';
 import ScrollTop from 'src/components/ScrollTop';
-import Copyright from 'src/components/Copyright';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -31,9 +31,10 @@ export default function Index(props) {
             <Divider />
             <Header />
             <Intro />
+            <Divider />
+            <Contact />
           </div>
         </main>
-        {/* <Copyright /> */}
       </div>
       <ScrollTop {...props}>
         <Fab color="secondary" size="small">

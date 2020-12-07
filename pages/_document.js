@@ -18,6 +18,26 @@ export default class MyDocument extends Document {
             href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&display=swap"
             rel="stylesheet"
           />
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `{
+                '@context': 'https://schema.org/',
+                '@type': 'Person',
+                name: 'David Shahriari',
+                url: 'https://davidsh.ca/',
+                image: 'https://davidsh.ca/images/avatar.jpeg',
+                sameAs: [
+                  'https://github.com/davidshahriari',
+                  'https://davidsh.ca/',
+                ],
+                jobTitle: 'Software Engineer',
+                worksFor: {
+                  '@type': 'Organization',
+                  name: 'Oddwic',
+                },
+              }`,
+            }}
+          />
         </Head>
         <body>
           <Main />
